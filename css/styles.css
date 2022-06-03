@@ -254,7 +254,7 @@ img {
 }
 
 .button {
-  display: block;
+  display: inline-block;
   text-transform: capitalize;
   text-decoration: none;
   background-color: var(--extra-color);
@@ -282,6 +282,7 @@ img {
   border-radius: 10px;
   background-image: url(../img/bg.svg);
   background-color: var(--bg-color);
+  transform: translateY(50%);
 }
 
 .short-form__input {
@@ -308,4 +309,127 @@ img {
 .button--short {
   border: none;
   border-radius: 10px;
+}
+
+
+/* FEATURES  */
+.features {
+  padding-top: 204px;
+  padding-bottom: 120px;
+}
+
+.features__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 18px;
+  color: var(--heading-color);
+  font-size: 40px;
+  line-height: 48px;
+  line-height: -1px;
+  white-space: nowrap;
+}
+
+.features__description {
+  width: 540px;
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.12px;
+}
+
+.feature-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.features-list__bg-divider {
+  position: absolute;
+  top: 149px;
+  z-index: -1;
+  width: 1110px;
+  height: 8px;
+  background-color: var(--extra-color);
+}
+
+.features-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-list__item {
+  position: relative;
+  background-color: var(--white);
+  width: 350px;
+  min-height: 267px;
+  border-radius: 5px;
+  padding-top: 77px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.features-list__item--detailed {
+  margin-top: 44px;
+}
+
+.features-list__item--customizable {
+  margin-top: 88px;
+}
+
+.features-list__badge {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  transform: translateY(-50%);
+}
+
+.features-list__badge-img {
+  object-fit: cover;
+}
+
+.features-list__title {
+  margin: 0;
+  margin-bottom: 12px;
+  color: var(--heading-color);
+  font-size: 22px;
+  line-height: normal;
+}
+
+.features-list__description {
+  margin: 0;
+}
+
+
+/* BOOSTER  */
+.booster {
+  background-image: url(../img/bg_huge.svg);
+  background-color: var(--bg-color);
+}
+
+.booster__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 57px;
+  padding-bottom: 57px;
+}
+
+.title--booster {
+  color: var(--white);
+  margin-bottom: 32px;
 }
