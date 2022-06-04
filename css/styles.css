@@ -217,7 +217,7 @@ img {
   display: flex;
   align-items: center;
   padding-top: 30px;
-  padding-bottom: 68px;
+  padding-bottom: 0px;
 }
 
 .hero__bg {
@@ -315,15 +315,15 @@ img {
 
 /* FEATURES  */
 .features {
-  padding-top: 204px;
-  padding-bottom: 120px;
+  padding-top: 198px;
+  padding-bottom: 160px;
 }
 
 .features__content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-bottom: 56px;
 }
 
@@ -354,7 +354,7 @@ img {
 
 .features__list-bg-divider {
   position: absolute;
-  top: 149px;
+  top: 195px;
   z-index: -1;
   width: 1110px;
   height: 8px;
@@ -378,11 +378,11 @@ img {
 }
 
 .features__list-item--detailed {
-  margin-top: 44px;
+  margin-top: 88px;
 }
 
 .features__list-item--customizable {
-  margin-top: 88px;
+  margin-bottom: -164px;
 }
 
 .features__list-badge {
