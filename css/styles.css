@@ -83,6 +83,10 @@ img {
   margin-right: auto;
 }
 
+*:focus {
+  outline: 3px dashed var(--heading-color);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -92,11 +96,6 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-*:focus {
-  outline: 3px dashed var(--black);
-  outline-offset: 3px;
 }
 
 
@@ -292,11 +291,32 @@ img {
   margin-right: 24px;
   border-radius: 10px;
   border: 3px solid transparent;
+  text-overflow: ellipsis;
 }
 
-/* .short-form__input:not(:placeholder-shown) {
+.short-form__input:not(:placeholder-shown) {
+  border-color: #f46363;
+}
+
+/* VALID-INVALID  */
+.short-form__input:focus {
+  border-color: #f46363;
+  outline: none;
+}
+
+.short-form__input:not(:focus):not(:placeholder-shown):valid {
   border-color: transparent;
-} */
+}
+
+.short-form__input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: #f46363;
+}
+
+.short-form__input:focus + .validation-error,
+.short-form__input:valid + .validation-error,
+.short-form__input:placeholder-shown + .validation-error {
+  display: none;
+}
 
 ::placeholder {
   font-size: 20px;
@@ -305,6 +325,22 @@ img {
   font-weight: 500;
   color: var(--heading-color);
   opacity: 0.5;
+}
+
+/* AUTOFILL  */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-color: transparent;
+  -webkit-text-fill-color: var(--text-color);
+  -webkit-box-shadow: 0 0 0px 1000px 000 inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .button--short {
