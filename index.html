@@ -41,15 +41,14 @@
 
         <!-- AUTH  -->
         <div class="auth-wrapper">
-          <a class="auth-wrapper__button" href="#">Login</a>
-          <a class="auth-wrapper__button auth-wrapper__button--signup" href="#">Sign up</a>
+          <a class="button button--small button--login" href="#">Login</a>
+          <a class="button button--small" href="#">Sign up</a>
         </div>
       </div>
     </header>
 
-
     <!-- HERO  -->
-    <div class="hero container">
+    <div class="hero__container container">
       <div class="hero__content">
         <h1 class="hero__title">More than just<br>shorter links</h1>
         <p class="hero__description">
@@ -59,35 +58,20 @@
       </div>
       <img class="hero__bg" src="img/hero_bg.svg" alt="" aria-hidden="true" width="733" height="482">
     </div>
-
-    <!-- LINK SHORT GENERATOR  -->
-    <section class="short-generator container ">
-      <h2 class="visually-hidden">Short generator</h2>
-
-      <form class="short-form" action="https://echo.htmlacademy.ru" method="POST">
-        <div class="short-form__inner">
-          <input class="short-form__input" type="url"  name="short_link" pattern="https://.*" placeholder="Shorten a link here..." required>
-          <button class="button button--short" type="submit">Shorten It!</button>
-        </div>
-      </form>
-    </section>
   </div>
 
 
   <!-- MAIN CONTENT  -->
   <main class="main-content">
     <section class="features">
-      <div class="features__content">
+      <div class="features__top">
         <h2 class="title">Advanced Statistics</h2>
         <p class="features__description">
           Track how your links are performing across the web with our advanced statistics dashboard.
         </p>
       </div>
 
-      <div class="feature-list container">
-
-        <!-- BG DIVIDER  -->
-        <div class="features__list-bg-divider"></div>
+      <div class="feature-list__container container">
 
         <!-- BRAND  -->
         <div class="features__list-item">
@@ -100,7 +84,7 @@
         </div>
 
         <!-- DETAILED  -->
-        <div class="features__list-item features__list-item--detailed">
+        <div class="features__list-item">
           <span class="features__list-badge">
             <img class="features__list-badge-img" src="img/hero_list/detailed_recognition.svg" width="40" height="40" alt="" aria-hidden="true">
           </span>
@@ -110,7 +94,7 @@
         </div>
 
         <!-- CUSTOMIZABLE  -->
-        <div class="features__list-item features__list-item--customizable">
+        <div class="features__list-item">
           <span class="features__list-badge">
             <img class="features__list-badge-img" src="img/hero_list/fully_customizable.svg" width="48" height="48" alt="" aria-hidden="true">
           </span>
@@ -124,9 +108,9 @@
 
 
     <!-- LINK BOOSTER  -->
-    <section class="booster">
-      <div class="booster__inner container">
-        <h2 class="title title--booster">Boost your links today</h2>
+    <section class="cta">
+      <div class="cta__container container">
+        <h2 class="title title--cta">Boost your links today</h2>
         <a class="button" href="#" target="_blank">Get started</a>
       </div>
     </section>
@@ -142,53 +126,66 @@
         <img class="logo__img" src="img/logo_footer.svg" alt="Site logo" width="120" height="32">
       </a>
 
-      <div class="nav">
+
+      <!-- MENUES  -->
+      <section class="menues">
+
+        <h2 class="visually-hidden">Shortly menu for other page</h2>
 
         <!-- FEATURES  -->
-        <dl class="nav__list">
-          <dt class="nav__dt">Features</dt>
-          <dd class="nav__dd">
-            <a class="nav__link" href="#">Link Shortening</a>
-          </dd>
-          <dd class="nav__dd">
-            <a class="nav__link" href="#">Branded Links</a>
-          </dd>
-          <dd class="nav__dd">
-            <a class="nav__link" href="#">Analytics</a>
-          </dd>
-        </dl>
+        <div class="menu">
+          <h3 class="menu__title">Features</h3>
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Link Shortening</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Branded Links</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Analytics</a>
+            </li>
+          </ul>
+        </div>
 
         <!-- RESOURCE  -->
-        <dl class="nav__list nav__list--resource">
-          <dt class="nav__dt">Resources</dt>
-          <dd class="nav__dd">
-            <a class="nav__link" href="#">Blog</a>
-          </dd>
-          <dd class="nav__dd">
-            <a class="nav__link" href="#">Developers</a>
-          </dd>
-          <dd class="nav__dd">
-            <a class="nav__link" href="#">Support</a>
-          </dd>
-        </dl>
+        <div class="menu">
+          <h3 class="menu__title">Resources</h3>
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Blog</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Developers</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Support</a>
+            </li>
+          </ul>
+        </div>
 
         <!-- COMPANY  -->
-        <dl class="nav__list">
-          <dt class="nav__dt">Company</dt>
-          <dd class="nav__dd">
-            <a class="nav__link" href="#">About</a>
-          </dd>
-          <dd class="nav__dd">
-            <a class="nav__link" href="#">Our Team</a>
-          </dd>
-          <dd class="nav__dd">
-            <a class="nav__link" href="#">Careers</a>
-          </dd>
-          <dd class="nav__dd">
-            <a class="nav__link" href="#">Contact</a>
-          </dd>
-        </dl>
-      </div>
+        <div class="menu">
+          <h3 class="menu__title">Company</h3>
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Our Team</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Careers</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <!-- SOCIAL  -->
       <ul class="social-list">
