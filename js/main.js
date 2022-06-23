@@ -13,6 +13,8 @@ elUrlShortenerForm.addEventListener('click', function (evt) {
 
     evt.target.classList.add('button--rectangle-small-copied');
 
+   navigator.clipboard.writeText(evt.target.previousElementSibling.textContent)
+
     setTimeout(function () {
       evt.target.textContent = 'Copy';
       evt.target.classList.remove('button--rectangle-small-copied');
