@@ -63,6 +63,49 @@
 
   <!-- MAIN CONTENT  -->
   <main class="main-content">
+
+    <!-- URL-SHORTENER-FORM  -->
+    <section class="url-shortener-form-wrapper__container container">
+      <h2 class="visually-hidden">URL shortener generator</h2>
+      <form class="url-shortener-form js-url-shortener-form" action="http://echo.htmlacademy.ru" method="POST">
+        <div class="url-shortener-form__inner">
+          <div class="url-shortener-form__input-wrapper">
+            <input class="url-shortener-form__input" type="url" name="url" placeholder="Shorten a link here..." aria-label="URL shorting place">
+            <div class="url-shortener-form__input-error-msg">Please add a link</div>
+          </div>
+          <button class="button button--rectangle" type="submit">Shorten it!</button>
+        </div>
+
+        <div class="url-shortener-form__results-wrapper">
+          <ul class="url-shortener-form__results-list">
+            <li class="url-shortener-form__results-item">
+              <div class="url-shortener-form__results-inner">
+                <div class="url-shortener-form__result-link">https://www.frontendmentor.io</div>
+                <div class="url-shortener-form__result-link url-shortener-form__result">https://rel.ink/k4lKyk</div>
+                <button class="button button--rectangle button--rectangle-small js-button-copy-clipboard" type="button">Copy</button>
+              </div>
+            </li>
+            <li class="url-shortener-form__results-item">
+              <div class="url-shortener-form__results-inner">
+                <div class="url-shortener-form__result-link">https://twitter.com/frontendmentor</div>
+                <div class="url-shortener-form__result-link url-shortener-form__result">https://rel.ink/gxOXp9</div>
+                <button class="button button--rectangle button--rectangle-small js-button-copy-clipboard" type="button">Copy</button>
+              </div>
+            </li>
+            <li class="url-shortener-form__results-item">
+              <div class="url-shortener-form__results-inner">
+                <div class="url-shortener-form__result-link">https://www.linkedin.com/company/frontend-mentor</div>
+                <div class="url-shortener-form__result-link url-shortener-form__result">https://rel.ink/gob3X9</div>
+                <button class="button button--rectangle button--rectangle-small js-button-copy-clipboard" type="button">Copy</button>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </form>
+    </section>
+
+
     <section class="features">
       <div class="features__top">
         <h2 class="title">Advanced Statistics</h2>
